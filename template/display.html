@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <link rel="stylesheet" type="text/css" href="../static/main.css">
+    <title>Trending Shows</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script defer src="https://kit.fontawesome.com/01173ddd9a.js" crossorigin="anonymous"></script> -->
+</head> 
+<body> 
+  <div class="wrapper" 
+            <div class="netflixLogo"> 
+               <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master
+                  img/logo.PNG" alt="Logo Image">
+                </a> 
+            </div> 
+            <nav class="main-nav">
+                <a href="/?media=movie" id="home">Home</a> 
+                <a href="/?media=tv" id="tvshows">TV Shows</a> 
+                <a href="/?media=person" id="myList">People</a>
+                <a href="#originals">Originals</a> 
+                <a href="#">Recently Added</a> 
+                <a target="_blank" href="https://codepen.io/cb2307/full/NzaOrm">Portfolio</a> 
+            </nav> 
+            <nav class="sub-nav">
+                <a href="#"><i class="fas fa-search sub-nav-logo"></i></a> 
+                <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a> 
+                <a href="#">Account</a> 
+            </nav> 
+       <section class="main-container">
+        <div class="location" id="home">
+            <h1 id="home">Trending Now</h1> 
+            <div class="box"> 
+                {% for i in info %}
+                <a href=""><img src="{{ i['URL'] }}" width="350px" height="130px"></a>
+                {% endfor %} 
+            </div> 
+        </div>
+        </section>
+    </div>
+    </body>
+    </html>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
